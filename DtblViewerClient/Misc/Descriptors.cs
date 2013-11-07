@@ -50,9 +50,11 @@ namespace DtblViewerClient.Misc {
             s_columnDescriptors.Clear();
             GC.Collect();
 
-            XmlReader fsDescriptors = XmlReader.Create(sFilePath);
-            
+            XmlReader fsDescriptors = null;
+
             try {
+                fsDescriptors = XmlReader.Create(sFilePath);
+
                 while (fsDescriptors.Read()) {
                     if(fsDescriptors.NodeType != XmlNodeType.Element || fsDescriptors.Name != "Table")
                         continue;
@@ -88,7 +90,9 @@ namespace DtblViewerClient.Misc {
                 }
             } catch { }
 
-            fsDescriptors.Close();
+            if (fsDescriptors != null)
+                fsDescriptors.Close();
+
             IsFileLoaded = true;
         }
 
@@ -107,13 +111,18 @@ namespace DtblViewerClient.Misc {
         /// </summary>
         /// <param name="tblDataTable">The table to apply descriptor information to.</param>
         public static void Apply(ref Table tblDataTable) {
-            if (!s_initialized || !IsFileLoaded || !s_columnDescriptors.ContainsKey(tblDataTable.TableName))
+            if (!s_initialized || !IsFileLoaded || !ExistsForTable(ref tblDataTable))
                 throw new Exception("Descriptors::Apply(): Descriptors do not exist for this table.");
 
             foreach (ColumnDescriptor colColumnDescriptor in s_columnDescriptors[tblDataTable.TableName].Values) {
                 tblDataTable.Columns[colColumnDescriptor.Index].Offset = colColumnDescriptor.Offset;
                 tblDataTable.Columns[colColumnDescriptor.Index].Size = colColumnDescriptor.Size;
             }
+        }
+
+        public static bool ExistsForTable(ref Table tblDataTable) {
+            return s_initialized && IsFileLoaded &&
+                s_columnDescriptors.ContainsKey(tblDataTable.TableName);
         }
 
     }

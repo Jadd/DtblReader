@@ -299,7 +299,7 @@ namespace DtblViewerClient.Forms {
             if (m_loadedTable.FileSize >= (50 * 1024 * 1024))
                 if (MessageBox.Show("The selected file is exceptionally large and could take a long time to load. Would you like to continue?",
                     "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
-                    return;
+                    goto Cancel;
 
             if (Settings.UseExternalDescriptors && !Descriptors.IsFileLoaded) {
                 SetStatusText("Loading Definitions...");
@@ -310,24 +310,31 @@ namespace DtblViewerClient.Forms {
 
             m_loadedTable.ReadFile();
             m_loadedTable.ReadHeader();
+
+            if (!m_loadedTable.IsValid) {
+                MessageBox.Show("The loaded table did not match the expected file format!",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                goto Cancel;
+            }
+
             m_loadedTable.ReadColumns();
 
-            if (Settings.UseExternalDescriptors)
+            if (Settings.UseExternalDescriptors && Descriptors.ExistsForTable(ref m_loadedTable))
                 Descriptors.Apply(ref m_loadedTable);
 
             m_loadedTable.ReadRows();
             m_loadedTable.CloseFile();
 
-            if (!m_loadedTable.IsValid) {
-                MessageBox.Show("The loaded table did not match the expected file format!",
+            if (m_loadedTable.ColumnCount == 0) {
+                MessageBox.Show("The loaded table did not contain any columns!",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                goto Cancel;
             }
 
             if (m_loadedTable.RowCount == 0) {
                 MessageBox.Show("The loaded table did not contain any rows!",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                goto Cancel;
             }
             
             MenuStrip_File_Export.Enabled = true;
@@ -351,6 +358,10 @@ namespace DtblViewerClient.Forms {
             SetPageNumber(1);
             
             SetStatusText("Viewing Table: {0}.tbl", m_loadedTable.TableName);
+            return;
+
+        Cancel:
+            SetStatusText("Ready");
         }
 
         /// <summary>
