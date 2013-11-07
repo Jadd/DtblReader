@@ -1,4 +1,12 @@
-<Descriptors Version="6331">
+<Descriptors Version="6356">
+	<Table Name="AccountItem" Columns="6">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="24" Type="130" Size="524"/>
+	</Table>
 	<Table Name="Achievement" Columns="22">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
@@ -376,7 +384,11 @@
 		<Column Index="10" Offset="40" Type="4" Size="4"/>
 		<Column Index="11" Offset="44" Type="4" Size="4"/>
 	</Table>
-	<Table Name="CCStates" Columns="8">
+	<Table Name="CCStateDiminishingReturns" Columns="2">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+	</Table>
+	<Table Name="CCStates" Columns="9">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="4" Size="4"/>
@@ -385,6 +397,7 @@
 		<Column Index="5" Offset="24" Type="3" Size="4"/>
 		<Column Index="6" Offset="28" Type="3" Size="4"/>
 		<Column Index="7" Offset="32" Type="3" Size="4"/>
+		<Column Index="8" Offset="36" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Challenge" Columns="21">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -409,10 +422,9 @@
 		<Column Index="19" Offset="76" Type="3" Size="4"/>
 		<Column Index="20" Offset="80" Type="3" Size="4"/>
 	</Table>
-	<Table Name="ChallengeTier" Columns="3">
+	<Table Name="ChallengeTier" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
-		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
 	<Table Name="CharacterCreation" Columns="41">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -457,6 +469,23 @@
 		<Column Index="39" Offset="156" Type="3" Size="4"/>
 		<Column Index="40" Offset="160" Type="3" Size="4"/>
 	</Table>
+	<Table Name="CharacterCreationArmorSet" Columns="15">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
+		<Column Index="6" Offset="24" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="3" Size="4"/>
+		<Column Index="8" Offset="32" Type="3" Size="4"/>
+		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="12" Offset="48" Type="3" Size="4"/>
+		<Column Index="13" Offset="52" Type="3" Size="4"/>
+		<Column Index="14" Offset="56" Type="3" Size="4"/>
+	</Table>
 	<Table Name="CharacterCustomization" Columns="10">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
@@ -469,11 +498,12 @@
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
 	</Table>
-	<Table Name="CharacterCustomizationLabel" Columns="2">
+	<Table Name="CharacterCustomizationLabel" Columns="3">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
-	<Table Name="CharacterTitle" Columns="9">
+	<Table Name="CharacterTitle" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -482,7 +512,6 @@
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="3" Size="4"/>
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
-		<Column Index="8" Offset="32" Type="3" Size="4"/>
 	</Table>
 	<Table Name="CharacterTitleCategory" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -504,6 +533,16 @@
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="16" Type="130" Size="524"/>
 		<Column Index="4" Offset="24" Type="130" Size="524"/>
+	</Table>
+	<Table Name="CityDirection" Columns="8">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
+		<Column Index="6" Offset="24" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Class" Columns="69">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -696,7 +735,7 @@
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="130" Size="104"/>
 	</Table>
-	<Table Name="Creature2" Columns="165">
+	<Table Name="Creature2" Columns="166">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="130" Size="304"/>
@@ -857,11 +896,12 @@
 		<Column Index="157" Offset="632" Type="3" Size="4"/>
 		<Column Index="158" Offset="636" Type="3" Size="4"/>
 		<Column Index="159" Offset="640" Type="3" Size="4"/>
-		<Column Index="160" Offset="644" Type="4" Size="4"/>
-		<Column Index="161" Offset="648" Type="3" Size="4"/>
+		<Column Index="160" Offset="644" Type="3" Size="4"/>
+		<Column Index="161" Offset="648" Type="4" Size="4"/>
 		<Column Index="162" Offset="652" Type="3" Size="4"/>
 		<Column Index="163" Offset="656" Type="3" Size="4"/>
 		<Column Index="164" Offset="660" Type="3" Size="4"/>
+		<Column Index="165" Offset="664" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Creature2Action" Columns="11">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1082,6 +1122,14 @@
 		<Column Index="3" Offset="24" Type="130" Size="504"/>
 		<Column Index="4" Offset="32" Type="20" Size="8"/>
 	</Table>
+	<Table Name="CustomerSurvey" Columns="6">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
+	</Table>
 	<Table Name="CustomizationParameter" Columns="11">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
@@ -1095,13 +1143,14 @@
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
 		<Column Index="10" Offset="40" Type="3" Size="4"/>
 	</Table>
-	<Table Name="CustomizationParameterMap" Columns="6">
+	<Table Name="CustomizationParameterMap" Columns="7">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
+		<Column Index="6" Offset="24" Type="3" Size="4"/>
 	</Table>
 	<Table Name="DailyQuestGroup" Columns="5">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1176,7 +1225,7 @@
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 	</Table>
-	<Table Name="EldanAugmentation" Columns="11">
+	<Table Name="EldanAugmentation" Columns="12">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1188,6 +1237,7 @@
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
 		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="3" Size="4"/>
 	</Table>
 	<Table Name="EldanAugmentationCategory" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1199,7 +1249,7 @@
 		<Column Index="6" Offset="24" Type="3" Size="4"/>
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Emotes" Columns="23">
+	<Table Name="Emotes" Columns="24">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1223,6 +1273,7 @@
 		<Column Index="20" Offset="80" Type="3" Size="4"/>
 		<Column Index="21" Offset="84" Type="3" Size="4"/>
 		<Column Index="22" Offset="88" Type="3" Size="4"/>
+		<Column Index="23" Offset="92" Type="3" Size="4"/>
 	</Table>
 	<Table Name="EmoteSequenceTransition" Columns="5">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1230,6 +1281,14 @@
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
+	</Table>
+	<Table Name="Entitlement" Columns="6">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="24" Type="130" Size="524"/>
 	</Table>
 	<Table Name="Episode" Columns="7">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1361,11 +1420,12 @@
 		<Column Index="10" Offset="52" Type="3" Size="4"/>
 		<Column Index="11" Offset="56" Type="3" Size="4"/>
 	</Table>
-	<Table Name="GuildPermission" Columns="4">
+	<Table Name="GuildPermission" Columns="5">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
-		<Column Index="2" Offset="8" Type="130" Size="104"/>
-		<Column Index="3" Offset="16" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="16" Type="130" Size="104"/>
+		<Column Index="4" Offset="24" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Hazard" Columns="15">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1418,7 +1478,7 @@
 		<Column Index="1" Offset="8" Type="130" Size="104"/>
 		<Column Index="2" Offset="16" Type="130" Size="104"/>
 	</Table>
-	<Table Name="HousingDecorInfo" Columns="10">
+	<Table Name="HousingDecorInfo" Columns="11">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1429,6 +1489,7 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
 	</Table>
 	<Table Name="HousingDecorLimitCategory" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1543,7 +1604,7 @@
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 	</Table>
-	<Table Name="HousingWallpaperInfo" Columns="7">
+	<Table Name="HousingWallpaperInfo" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1551,6 +1612,7 @@
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="3" Size="4"/>
 	</Table>
 	<Table Name="HousingWarplotBossToken" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1602,12 +1664,13 @@
 		<Column Index="20" Offset="92" Type="3" Size="4"/>
 		<Column Index="21" Offset="96" Type="3" Size="4"/>
 	</Table>
-	<Table Name="InputAction" Columns="5">
+	<Table Name="InputAction" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
-		<Column Index="1" Offset="4" Type="3" Size="4"/>
-		<Column Index="2" Offset="8" Type="3" Size="4"/>
-		<Column Index="3" Offset="12" Type="11" Size="4"/>
-		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="1" Offset="8" Type="130" Size="104"/>
+		<Column Index="2" Offset="16" Type="3" Size="4"/>
+		<Column Index="3" Offset="20" Type="3" Size="4"/>
+		<Column Index="4" Offset="24" Type="11" Size="4"/>
+		<Column Index="5" Offset="28" Type="3" Size="4"/>
 	</Table>
 	<Table Name="InputActionCategory" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1621,7 +1684,7 @@
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Item2" Columns="54">
+	<Table Name="Item2" Columns="55">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1676,40 +1739,47 @@
 		<Column Index="51" Offset="204" Type="3" Size="4"/>
 		<Column Index="52" Offset="208" Type="130" Size="104"/>
 		<Column Index="53" Offset="216" Type="130" Size="204"/>
+		<Column Index="54" Offset="224" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Item2Category" Columns="13">
+	<Table Name="Item2Category" Columns="14">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
-		<Column Index="5" Offset="20" Type="4" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="4" Size="4"/>
 		<Column Index="7" Offset="28" Type="4" Size="4"/>
 		<Column Index="8" Offset="32" Type="4" Size="4"/>
-		<Column Index="9" Offset="36" Type="3" Size="4"/>
-		<Column Index="10" Offset="40" Type="4" Size="4"/>
-		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="9" Offset="36" Type="4" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="4" Size="4"/>
 		<Column Index="12" Offset="48" Type="3" Size="4"/>
+		<Column Index="13" Offset="52" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Item2Family" Columns="5">
+	<Table Name="Item2Family" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
-		<Column Index="3" Offset="12" Type="4" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="4" Size="4"/>
+		<Column Index="5" Offset="20" Type="4" Size="4"/>
 	</Table>
-	<Table Name="Item2Type" Columns="8">
+	<Table Name="Item2Type" Columns="12">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
-		<Column Index="5" Offset="20" Type="4" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="4" Size="4"/>
-		<Column Index="7" Offset="28" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="4" Size="4"/>
+		<Column Index="8" Offset="32" Type="3" Size="4"/>
+		<Column Index="9" Offset="36" Type="4" Size="4"/>
+		<Column Index="10" Offset="40" Type="4" Size="4"/>
+		<Column Index="11" Offset="44" Type="4" Size="4"/>
 	</Table>
-	<Table Name="ItemChallengeList" Columns="18">
+	<Table Name="ItemChallengeList" Columns="34">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1727,7 +1797,23 @@
 		<Column Index="14" Offset="56" Type="3" Size="4"/>
 		<Column Index="15" Offset="60" Type="3" Size="4"/>
 		<Column Index="16" Offset="64" Type="3" Size="4"/>
-		<Column Index="17" Offset="68" Type="4" Size="4"/>
+		<Column Index="17" Offset="68" Type="3" Size="4"/>
+		<Column Index="18" Offset="72" Type="3" Size="4"/>
+		<Column Index="19" Offset="76" Type="3" Size="4"/>
+		<Column Index="20" Offset="80" Type="3" Size="4"/>
+		<Column Index="21" Offset="84" Type="3" Size="4"/>
+		<Column Index="22" Offset="88" Type="3" Size="4"/>
+		<Column Index="23" Offset="92" Type="3" Size="4"/>
+		<Column Index="24" Offset="96" Type="3" Size="4"/>
+		<Column Index="25" Offset="100" Type="3" Size="4"/>
+		<Column Index="26" Offset="104" Type="3" Size="4"/>
+		<Column Index="27" Offset="108" Type="3" Size="4"/>
+		<Column Index="28" Offset="112" Type="3" Size="4"/>
+		<Column Index="29" Offset="116" Type="3" Size="4"/>
+		<Column Index="30" Offset="120" Type="3" Size="4"/>
+		<Column Index="31" Offset="124" Type="3" Size="4"/>
+		<Column Index="32" Offset="128" Type="3" Size="4"/>
+		<Column Index="33" Offset="132" Type="4" Size="4"/>
 	</Table>
 	<Table Name="ItemChallengeReward" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1826,7 +1912,7 @@
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
-	<Table Name="ItemSchematic" Columns="44">
+	<Table Name="ItemSchematic" Columns="43">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1870,9 +1956,8 @@
 		<Column Index="40" Offset="160" Type="3" Size="4"/>
 		<Column Index="41" Offset="164" Type="3" Size="4"/>
 		<Column Index="42" Offset="168" Type="3" Size="4"/>
-		<Column Index="43" Offset="172" Type="3" Size="4"/>
 	</Table>
-	<Table Name="ItemSchematicInstance" Columns="14">
+	<Table Name="ItemSchematicInstance" Columns="13">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -1886,7 +1971,6 @@
 		<Column Index="10" Offset="40" Type="3" Size="4"/>
 		<Column Index="11" Offset="44" Type="3" Size="4"/>
 		<Column Index="12" Offset="48" Type="3" Size="4"/>
-		<Column Index="13" Offset="52" Type="3" Size="4"/>
 	</Table>
 	<Table Name="ItemSlot" Columns="7">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1962,19 +2046,31 @@
 		<Column Index="10" Offset="40" Type="4" Size="4"/>
 		<Column Index="11" Offset="44" Type="4" Size="4"/>
 	</Table>
+	<Table Name="Language" Columns="2">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="8" Type="130" Size="104"/>
+	</Table>
 	<Table Name="LevelDifferentialAttribute" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="4" Size="4"/>
 	</Table>
-	<Table Name="LevelUpUnlock" Columns="6">
+	<Table Name="LevelPower" Columns="5">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="4" Size="4"/>
+		<Column Index="2" Offset="8" Type="4" Size="4"/>
+		<Column Index="3" Offset="12" Type="4" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+	</Table>
+	<Table Name="LevelUpUnlock" Columns="7">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
-		<Column Index="4" Offset="16" Type="130" Size="524"/>
-		<Column Index="5" Offset="24" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="24" Type="130" Size="524"/>
+		<Column Index="6" Offset="32" Type="3" Size="4"/>
 	</Table>
 	<Table Name="LevelUpUnlockType" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -1985,22 +2081,22 @@
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
-	<Table Name="LocalizedStrings" Columns="15">
+	<Table Name="LoadingScreenTip" Columns="2">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+	</Table>
+	<Table Name="LocalizedEnum" Columns="3">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="8" Type="130" Size="104"/>
-		<Column Index="2" Offset="16" Type="130" Size="1028"/>
-		<Column Index="3" Offset="24" Type="130" Size="1028"/>
-		<Column Index="4" Offset="32" Type="130" Size="1028"/>
-		<Column Index="5" Offset="40" Type="130" Size="1028"/>
-		<Column Index="6" Offset="48" Type="3" Size="4"/>
-		<Column Index="7" Offset="52" Type="3" Size="4"/>
-		<Column Index="8" Offset="56" Type="130" Size="1028"/>
-		<Column Index="9" Offset="64" Type="3" Size="4"/>
-		<Column Index="10" Offset="68" Type="3" Size="4"/>
-		<Column Index="11" Offset="72" Type="3" Size="4"/>
-		<Column Index="12" Offset="76" Type="3" Size="4"/>
-		<Column Index="13" Offset="80" Type="3" Size="4"/>
-		<Column Index="14" Offset="84" Type="3" Size="4"/>
+		<Column Index="2" Offset="16" Type="3" Size="4"/>
+	</Table>
+	<Table Name="LocalizedText" Columns="6">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="16" Type="130" Size="1028"/>
+		<Column Index="4" Offset="24" Type="3" Size="4"/>
+		<Column Index="5" Offset="28" Type="3" Size="4"/>
 	</Table>
 	<Table Name="LootPinataInfo" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -2120,6 +2216,11 @@
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
+	</Table>
+	<Table Name="MatchingMapPrerequisite" Columns="3">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
 	<Table Name="MaterialData" Columns="3">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -2248,9 +2349,11 @@
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="8" Type="130" Size="104"/>
 	</Table>
-	<Table Name="Redacted" Columns="2">
+	<Table Name="Redacted" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
-		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="1" Offset="8" Type="130" Size="132"/>
+		<Column Index="2" Offset="16" Type="3" Size="4"/>
+		<Column Index="3" Offset="20" Type="3" Size="4"/>
 	</Table>
 	<Table Name="PathEpisode" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -2285,12 +2388,13 @@
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="3" Size="4"/>
 	</Table>
-	<Table Name="PathExplorerNode" Columns="5">
+	<Table Name="PathExplorerNode" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
 	</Table>
 	<Table Name="PathExplorerPowerMap" Columns="7">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -2643,7 +2747,7 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 	</Table>
-	<Table Name="PetFlair" Columns="7">
+	<Table Name="PetFlair" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -2651,6 +2755,7 @@
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 		<Column Index="6" Offset="24" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="3" Size="4"/>
 	</Table>
 	<Table Name="PositionalRequirement" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -2918,7 +3023,7 @@
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
 	</Table>
-	<Table Name="QuestDirection" Columns="10">
+	<Table Name="QuestDirection" Columns="19">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -2929,6 +3034,15 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="12" Offset="48" Type="3" Size="4"/>
+		<Column Index="13" Offset="52" Type="3" Size="4"/>
+		<Column Index="14" Offset="56" Type="3" Size="4"/>
+		<Column Index="15" Offset="60" Type="3" Size="4"/>
+		<Column Index="16" Offset="64" Type="3" Size="4"/>
+		<Column Index="17" Offset="68" Type="3" Size="4"/>
+		<Column Index="18" Offset="72" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Quest2RandomTextLineJoin" Columns="4">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3338,7 +3452,7 @@
 		<Column Index="17" Offset="68" Type="4" Size="4"/>
 		<Column Index="18" Offset="72" Type="4" Size="4"/>
 	</Table>
-	<Table Name="Spell4" Columns="96">
+	<Table Name="Spell4" Columns="133">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="8" Type="130" Size="404"/>
 		<Column Index="2" Offset="16" Type="3" Size="4"/>
@@ -3435,6 +3549,43 @@
 		<Column Index="93" Offset="380" Type="3" Size="4"/>
 		<Column Index="94" Offset="384" Type="3" Size="4"/>
 		<Column Index="95" Offset="388" Type="3" Size="4"/>
+		<Column Index="96" Offset="392" Type="3" Size="4"/>
+		<Column Index="97" Offset="396" Type="3" Size="4"/>
+		<Column Index="98" Offset="400" Type="3" Size="4"/>
+		<Column Index="99" Offset="404" Type="3" Size="4"/>
+		<Column Index="100" Offset="408" Type="3" Size="4"/>
+		<Column Index="101" Offset="412" Type="3" Size="4"/>
+		<Column Index="102" Offset="416" Type="3" Size="4"/>
+		<Column Index="103" Offset="420" Type="3" Size="4"/>
+		<Column Index="104" Offset="424" Type="3" Size="4"/>
+		<Column Index="105" Offset="428" Type="3" Size="4"/>
+		<Column Index="106" Offset="432" Type="3" Size="4"/>
+		<Column Index="107" Offset="436" Type="3" Size="4"/>
+		<Column Index="108" Offset="440" Type="3" Size="4"/>
+		<Column Index="109" Offset="444" Type="3" Size="4"/>
+		<Column Index="110" Offset="448" Type="3" Size="4"/>
+		<Column Index="111" Offset="452" Type="3" Size="4"/>
+		<Column Index="112" Offset="456" Type="3" Size="4"/>
+		<Column Index="113" Offset="460" Type="3" Size="4"/>
+		<Column Index="114" Offset="464" Type="3" Size="4"/>
+		<Column Index="115" Offset="468" Type="3" Size="4"/>
+		<Column Index="116" Offset="472" Type="3" Size="4"/>
+		<Column Index="117" Offset="476" Type="3" Size="4"/>
+		<Column Index="118" Offset="480" Type="3" Size="4"/>
+		<Column Index="119" Offset="484" Type="3" Size="4"/>
+		<Column Index="120" Offset="488" Type="3" Size="4"/>
+		<Column Index="121" Offset="492" Type="3" Size="4"/>
+		<Column Index="122" Offset="496" Type="3" Size="4"/>
+		<Column Index="123" Offset="500" Type="3" Size="4"/>
+		<Column Index="124" Offset="504" Type="3" Size="4"/>
+		<Column Index="125" Offset="508" Type="3" Size="4"/>
+		<Column Index="126" Offset="512" Type="3" Size="4"/>
+		<Column Index="127" Offset="516" Type="3" Size="4"/>
+		<Column Index="128" Offset="520" Type="3" Size="4"/>
+		<Column Index="129" Offset="524" Type="3" Size="4"/>
+		<Column Index="130" Offset="528" Type="3" Size="4"/>
+		<Column Index="131" Offset="532" Type="3" Size="4"/>
+		<Column Index="132" Offset="536" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Spell4AoeTargetConstraints" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3444,7 +3595,7 @@
 		<Column Index="4" Offset="16" Type="4" Size="4"/>
 		<Column Index="5" Offset="20" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Spell4Base" Columns="71">
+	<Table Name="Spell4Base" Columns="46">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -3455,67 +3606,42 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
-		<Column Index="10" Offset="40" Type="3" Size="4"/>
-		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="4" Size="4"/>
+		<Column Index="11" Offset="44" Type="4" Size="4"/>
 		<Column Index="12" Offset="48" Type="3" Size="4"/>
 		<Column Index="13" Offset="52" Type="3" Size="4"/>
 		<Column Index="14" Offset="56" Type="3" Size="4"/>
-		<Column Index="15" Offset="60" Type="3" Size="4"/>
-		<Column Index="16" Offset="64" Type="3" Size="4"/>
-		<Column Index="17" Offset="68" Type="3" Size="4"/>
-		<Column Index="18" Offset="72" Type="3" Size="4"/>
-		<Column Index="19" Offset="76" Type="3" Size="4"/>
-		<Column Index="20" Offset="80" Type="3" Size="4"/>
-		<Column Index="21" Offset="84" Type="3" Size="4"/>
-		<Column Index="22" Offset="88" Type="3" Size="4"/>
-		<Column Index="23" Offset="92" Type="3" Size="4"/>
-		<Column Index="24" Offset="96" Type="3" Size="4"/>
-		<Column Index="25" Offset="100" Type="4" Size="4"/>
-		<Column Index="26" Offset="104" Type="4" Size="4"/>
-		<Column Index="27" Offset="108" Type="3" Size="4"/>
-		<Column Index="28" Offset="112" Type="3" Size="4"/>
-		<Column Index="29" Offset="116" Type="3" Size="4"/>
-		<Column Index="30" Offset="120" Type="3" Size="4"/>
-		<Column Index="31" Offset="128" Type="130" Size="524"/>
+		<Column Index="15" Offset="64" Type="130" Size="524"/>
+		<Column Index="16" Offset="72" Type="3" Size="4"/>
+		<Column Index="17" Offset="76" Type="3" Size="4"/>
+		<Column Index="18" Offset="80" Type="3" Size="4"/>
+		<Column Index="19" Offset="84" Type="3" Size="4"/>
+		<Column Index="20" Offset="88" Type="3" Size="4"/>
+		<Column Index="21" Offset="92" Type="3" Size="4"/>
+		<Column Index="22" Offset="96" Type="4" Size="4"/>
+		<Column Index="23" Offset="100" Type="4" Size="4"/>
+		<Column Index="24" Offset="104" Type="3" Size="4"/>
+		<Column Index="25" Offset="108" Type="3" Size="4"/>
+		<Column Index="26" Offset="112" Type="3" Size="4"/>
+		<Column Index="27" Offset="116" Type="3" Size="4"/>
+		<Column Index="28" Offset="120" Type="3" Size="4"/>
+		<Column Index="29" Offset="124" Type="3" Size="4"/>
+		<Column Index="30" Offset="128" Type="3" Size="4"/>
+		<Column Index="31" Offset="132" Type="3" Size="4"/>
 		<Column Index="32" Offset="136" Type="3" Size="4"/>
 		<Column Index="33" Offset="140" Type="3" Size="4"/>
 		<Column Index="34" Offset="144" Type="3" Size="4"/>
 		<Column Index="35" Offset="148" Type="3" Size="4"/>
-		<Column Index="36" Offset="152" Type="3" Size="4"/>
-		<Column Index="37" Offset="156" Type="3" Size="4"/>
-		<Column Index="38" Offset="160" Type="3" Size="4"/>
-		<Column Index="39" Offset="164" Type="3" Size="4"/>
-		<Column Index="40" Offset="168" Type="3" Size="4"/>
+		<Column Index="36" Offset="152" Type="4" Size="4"/>
+		<Column Index="37" Offset="156" Type="4" Size="4"/>
+		<Column Index="38" Offset="160" Type="4" Size="4"/>
+		<Column Index="39" Offset="164" Type="4" Size="4"/>
+		<Column Index="40" Offset="168" Type="4" Size="4"/>
 		<Column Index="41" Offset="172" Type="4" Size="4"/>
 		<Column Index="42" Offset="176" Type="4" Size="4"/>
-		<Column Index="43" Offset="180" Type="3" Size="4"/>
-		<Column Index="44" Offset="184" Type="3" Size="4"/>
-		<Column Index="45" Offset="188" Type="3" Size="4"/>
-		<Column Index="46" Offset="192" Type="3" Size="4"/>
-		<Column Index="47" Offset="196" Type="3" Size="4"/>
-		<Column Index="48" Offset="200" Type="3" Size="4"/>
-		<Column Index="49" Offset="204" Type="3" Size="4"/>
-		<Column Index="50" Offset="208" Type="3" Size="4"/>
-		<Column Index="51" Offset="212" Type="3" Size="4"/>
-		<Column Index="52" Offset="216" Type="3" Size="4"/>
-		<Column Index="53" Offset="220" Type="3" Size="4"/>
-		<Column Index="54" Offset="224" Type="3" Size="4"/>
-		<Column Index="55" Offset="228" Type="3" Size="4"/>
-		<Column Index="56" Offset="232" Type="3" Size="4"/>
-		<Column Index="57" Offset="236" Type="3" Size="4"/>
-		<Column Index="58" Offset="240" Type="3" Size="4"/>
-		<Column Index="59" Offset="244" Type="3" Size="4"/>
-		<Column Index="60" Offset="248" Type="3" Size="4"/>
-		<Column Index="61" Offset="252" Type="3" Size="4"/>
-		<Column Index="62" Offset="256" Type="3" Size="4"/>
-		<Column Index="63" Offset="260" Type="3" Size="4"/>
-		<Column Index="64" Offset="264" Type="3" Size="4"/>
-		<Column Index="65" Offset="268" Type="3" Size="4"/>
-		<Column Index="66" Offset="272" Type="3" Size="4"/>
-		<Column Index="67" Offset="276" Type="3" Size="4"/>
-		<Column Index="68" Offset="280" Type="3" Size="4"/>
-		<Column Index="69" Offset="284" Type="3" Size="4"/>
-		<Column Index="70" Offset="288" Type="3" Size="4"/>
+		<Column Index="43" Offset="180" Type="4" Size="4"/>
+		<Column Index="44" Offset="184" Type="4" Size="4"/>
+		<Column Index="45" Offset="188" Type="4" Size="4"/>
 	</Table>
 	<Table Name="Spell4CastResult" Columns="5">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3523,11 +3649,6 @@
 		<Column Index="2" Offset="16" Type="3" Size="4"/>
 		<Column Index="3" Offset="20" Type="3" Size="4"/>
 		<Column Index="4" Offset="24" Type="3" Size="4"/>
-	</Table>
-	<Table Name="Spell4CCConditions" Columns="3">
-		<Column Index="0" Offset="0" Type="3" Size="4"/>
-		<Column Index="1" Offset="4" Type="3" Size="4"/>
-		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Spell4ClientMissile" Columns="47">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3583,44 +3704,14 @@
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 	</Table>
-	<Table Name="Spell4DamageTypes" Columns="2">
-		<Column Index="0" Offset="0" Type="3" Size="4"/>
-		<Column Index="1" Offset="4" Type="3" Size="4"/>
-	</Table>
-	<Table Name="Spell4EffectGroupList" Columns="33">
+	<Table Name="Spell4CCConditions" Columns="3">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
-		<Column Index="3" Offset="12" Type="3" Size="4"/>
-		<Column Index="4" Offset="16" Type="3" Size="4"/>
-		<Column Index="5" Offset="20" Type="3" Size="4"/>
-		<Column Index="6" Offset="24" Type="3" Size="4"/>
-		<Column Index="7" Offset="28" Type="3" Size="4"/>
-		<Column Index="8" Offset="32" Type="3" Size="4"/>
-		<Column Index="9" Offset="36" Type="3" Size="4"/>
-		<Column Index="10" Offset="40" Type="3" Size="4"/>
-		<Column Index="11" Offset="44" Type="3" Size="4"/>
-		<Column Index="12" Offset="48" Type="3" Size="4"/>
-		<Column Index="13" Offset="52" Type="3" Size="4"/>
-		<Column Index="14" Offset="56" Type="3" Size="4"/>
-		<Column Index="15" Offset="60" Type="3" Size="4"/>
-		<Column Index="16" Offset="64" Type="3" Size="4"/>
-		<Column Index="17" Offset="68" Type="3" Size="4"/>
-		<Column Index="18" Offset="72" Type="3" Size="4"/>
-		<Column Index="19" Offset="76" Type="3" Size="4"/>
-		<Column Index="20" Offset="80" Type="3" Size="4"/>
-		<Column Index="21" Offset="84" Type="3" Size="4"/>
-		<Column Index="22" Offset="88" Type="3" Size="4"/>
-		<Column Index="23" Offset="92" Type="3" Size="4"/>
-		<Column Index="24" Offset="96" Type="3" Size="4"/>
-		<Column Index="25" Offset="100" Type="3" Size="4"/>
-		<Column Index="26" Offset="104" Type="3" Size="4"/>
-		<Column Index="27" Offset="108" Type="3" Size="4"/>
-		<Column Index="28" Offset="112" Type="3" Size="4"/>
-		<Column Index="29" Offset="116" Type="3" Size="4"/>
-		<Column Index="30" Offset="120" Type="3" Size="4"/>
-		<Column Index="31" Offset="124" Type="3" Size="4"/>
-		<Column Index="32" Offset="128" Type="3" Size="4"/>
+	</Table>
+	<Table Name="Spell4DamageTypes" Columns="2">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Spell4EffectModification" Columns="10">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3675,6 +3766,41 @@
 		<Column Index="37" Offset="148" Type="4" Size="4"/>
 		<Column Index="38" Offset="152" Type="4" Size="4"/>
 		<Column Index="39" Offset="156" Type="3" Size="4"/>
+	</Table>
+	<Table Name="Spell4EffectGroupList" Columns="33">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="4" Type="3" Size="4"/>
+		<Column Index="2" Offset="8" Type="3" Size="4"/>
+		<Column Index="3" Offset="12" Type="3" Size="4"/>
+		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
+		<Column Index="6" Offset="24" Type="3" Size="4"/>
+		<Column Index="7" Offset="28" Type="3" Size="4"/>
+		<Column Index="8" Offset="32" Type="3" Size="4"/>
+		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="12" Offset="48" Type="3" Size="4"/>
+		<Column Index="13" Offset="52" Type="3" Size="4"/>
+		<Column Index="14" Offset="56" Type="3" Size="4"/>
+		<Column Index="15" Offset="60" Type="3" Size="4"/>
+		<Column Index="16" Offset="64" Type="3" Size="4"/>
+		<Column Index="17" Offset="68" Type="3" Size="4"/>
+		<Column Index="18" Offset="72" Type="3" Size="4"/>
+		<Column Index="19" Offset="76" Type="3" Size="4"/>
+		<Column Index="20" Offset="80" Type="3" Size="4"/>
+		<Column Index="21" Offset="84" Type="3" Size="4"/>
+		<Column Index="22" Offset="88" Type="3" Size="4"/>
+		<Column Index="23" Offset="92" Type="3" Size="4"/>
+		<Column Index="24" Offset="96" Type="3" Size="4"/>
+		<Column Index="25" Offset="100" Type="3" Size="4"/>
+		<Column Index="26" Offset="104" Type="3" Size="4"/>
+		<Column Index="27" Offset="108" Type="3" Size="4"/>
+		<Column Index="28" Offset="112" Type="3" Size="4"/>
+		<Column Index="29" Offset="116" Type="3" Size="4"/>
+		<Column Index="30" Offset="120" Type="3" Size="4"/>
+		<Column Index="31" Offset="124" Type="3" Size="4"/>
+		<Column Index="32" Offset="128" Type="3" Size="4"/>
 	</Table>
 	<Table Name="Spell4GroupList" Columns="33">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -3736,6 +3862,15 @@
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="11" Size="4"/>
+	</Table>
+	<Table Name="Spell4Runner" Columns="7">
+		<Column Index="0" Offset="0" Type="3" Size="4"/>
+		<Column Index="1" Offset="8" Type="130" Size="104"/>
+		<Column Index="2" Offset="16" Type="4" Size="4"/>
+		<Column Index="3" Offset="20" Type="4" Size="4"/>
+		<Column Index="4" Offset="24" Type="4" Size="4"/>
+		<Column Index="5" Offset="28" Type="4" Size="4"/>
+		<Column Index="6" Offset="32" Type="4" Size="4"/>
 	</Table>
 	<Table Name="Spell4SpellClassPower" Columns="2">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -4004,7 +4139,7 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 	</Table>
-	<Table Name="TradeskillAchievementReward" Columns="10">
+	<Table Name="TradeskillAchievementReward" Columns="13">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -4015,6 +4150,9 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="10" Offset="40" Type="3" Size="4"/>
+		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="12" Offset="48" Type="3" Size="4"/>
 	</Table>
 	<Table Name="TradeskillAdditive" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -4185,7 +4323,7 @@
 		<Column Index="1" Offset="8" Type="130" Size="104"/>
 		<Column Index="2" Offset="16" Type="3" Size="4"/>
 	</Table>
-	<Table Name="TutorialPage" Columns="11">
+	<Table Name="TutorialPage" Columns="12">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
@@ -4197,8 +4335,9 @@
 		<Column Index="8" Offset="32" Type="130" Size="524"/>
 		<Column Index="9" Offset="40" Type="130" Size="524"/>
 		<Column Index="10" Offset="48" Type="130" Size="524"/>
+		<Column Index="11" Offset="56" Type="3" Size="4"/>
 	</Table>
-	<Table Name="UnitProperty2" Columns="7">
+	<Table Name="UnitProperty2" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="8" Type="130" Size="104"/>
 		<Column Index="2" Offset="16" Type="130" Size="104"/>
@@ -4206,6 +4345,7 @@
 		<Column Index="4" Offset="28" Type="3" Size="4"/>
 		<Column Index="5" Offset="32" Type="4" Size="4"/>
 		<Column Index="6" Offset="36" Type="3" Size="4"/>
+		<Column Index="7" Offset="40" Type="3" Size="4"/>
 	</Table>
 	<Table Name="UnitRace" Columns="8">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -4334,18 +4474,19 @@
 		<Column Index="3" Offset="20" Type="3" Size="4"/>
 		<Column Index="4" Offset="24" Type="3" Size="4"/>
 	</Table>
-	<Table Name="World" Columns="11">
+	<Table Name="World" Columns="12">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="8" Type="130" Size="512"/>
 		<Column Index="2" Offset="16" Type="3" Size="4"/>
 		<Column Index="3" Offset="20" Type="3" Size="4"/>
 		<Column Index="4" Offset="24" Type="130" Size="524"/>
-		<Column Index="5" Offset="32" Type="3" Size="4"/>
-		<Column Index="6" Offset="36" Type="3" Size="4"/>
-		<Column Index="7" Offset="40" Type="3" Size="4"/>
-		<Column Index="8" Offset="44" Type="3" Size="4"/>
-		<Column Index="9" Offset="48" Type="3" Size="4"/>
-		<Column Index="10" Offset="52" Type="3" Size="4"/>
+		<Column Index="5" Offset="32" Type="130" Size="524"/>
+		<Column Index="6" Offset="40" Type="3" Size="4"/>
+		<Column Index="7" Offset="44" Type="3" Size="4"/>
+		<Column Index="8" Offset="48" Type="3" Size="4"/>
+		<Column Index="9" Offset="52" Type="3" Size="4"/>
+		<Column Index="10" Offset="56" Type="3" Size="4"/>
+		<Column Index="11" Offset="60" Type="3" Size="4"/>
 	</Table>
 	<Table Name="WorldClutter" Columns="46">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -4417,7 +4558,7 @@
 		<Column Index="18" Offset="92" Type="4" Size="4"/>
 		<Column Index="19" Offset="96" Type="4" Size="4"/>
 	</Table>
-	<Table Name="WorldLocation2" Columns="12">
+	<Table Name="WorldLocation2" Columns="13">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="4" Size="4"/>
 		<Column Index="2" Offset="8" Type="4" Size="4"/>
@@ -4427,9 +4568,10 @@
 		<Column Index="6" Offset="24" Type="4" Size="4"/>
 		<Column Index="7" Offset="28" Type="4" Size="4"/>
 		<Column Index="8" Offset="32" Type="4" Size="4"/>
-		<Column Index="9" Offset="36" Type="3" Size="4"/>
+		<Column Index="9" Offset="36" Type="4" Size="4"/>
 		<Column Index="10" Offset="40" Type="3" Size="4"/>
 		<Column Index="11" Offset="44" Type="3" Size="4"/>
+		<Column Index="12" Offset="48" Type="3" Size="4"/>
 	</Table>
 	<Table Name="WorldSky" Columns="3">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
@@ -4516,12 +4658,13 @@
 		<Column Index="7" Offset="28" Type="3" Size="4"/>
 		<Column Index="8" Offset="32" Type="3" Size="4"/>
 	</Table>
-	<Table Name="XpPerLevel" Columns="5">
+	<Table Name="XpPerLevel" Columns="6">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
 		<Column Index="1" Offset="4" Type="3" Size="4"/>
 		<Column Index="2" Offset="8" Type="3" Size="4"/>
 		<Column Index="3" Offset="12" Type="3" Size="4"/>
 		<Column Index="4" Offset="16" Type="3" Size="4"/>
+		<Column Index="5" Offset="20" Type="3" Size="4"/>
 	</Table>
 	<Table Name="ZoneCompletion" Columns="11">
 		<Column Index="0" Offset="0" Type="3" Size="4"/>
