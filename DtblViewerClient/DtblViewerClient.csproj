@@ -69,6 +69,7 @@
       <DependentUpon>SetRowsPerPageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Functions.cs" />
+    <Compile Include="Main\Log.cs" />
     <Compile Include="Misc\Descriptors.cs" />
     <Compile Include="Misc\Settings.cs" />
     <Compile Include="Program.cs" />

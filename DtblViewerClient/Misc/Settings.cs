@@ -20,10 +20,18 @@ namespace DtblViewerClient.Misc {
         private static bool s_useExternalDescriptors;
         private static string s_externalDescriptorsFile;
 
+        public static bool IsInitialized {
+            get;
+            private set;
+        }
+
         /// <summary>
         /// Initializes access to the settings file and reads settings into memory.
         /// </summary>
         public static void Initialize() {
+            if (IsInitialized)
+                return;
+
             s_settingsFile = Application.StartupPath + "\\Settings.ini";
 
             if (File.Exists(s_settingsFile)) {
@@ -35,6 +43,8 @@ namespace DtblViewerClient.Misc {
                 UseExternalDescriptors = true;
                 ExternalDescriptorsFile = "Resources\\Descriptors.xml";
             }
+
+            IsInitialized = true;
         }
 
         /// <summary>
@@ -42,6 +52,9 @@ namespace DtblViewerClient.Misc {
         /// </summary>
         /// <param name="sKey">The variable's name who's value will be obtained.</param>
         public static string Read(string sKey) {
+            if (!IsInitialized)
+                return "";
+
             char[] sResultBuffer = new char[256];
             int nLength = GetPrivateProfileString("Settings", sKey, "", sResultBuffer,
                 256, s_settingsFile);
@@ -55,6 +68,9 @@ namespace DtblViewerClient.Misc {
         /// <param name="sKey">The variable's name who's value will be set.</param>
         /// <param name="sValue">The value of the variable to write.</param>
         public static void Write(string sKey, string sValue) {
+            if (!IsInitialized)
+                return;
+
             WritePrivateProfileString("Settings", sKey, sValue, s_settingsFile);
         }
 

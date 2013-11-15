@@ -347,7 +347,7 @@
             // StatusStrip_StatusLabel
             // 
             this.StatusStrip_StatusLabel.Name = "StatusStrip_StatusLabel";
-            this.StatusStrip_StatusLabel.Size = new System.Drawing.Size(857, 17);
+            this.StatusStrip_StatusLabel.Size = new System.Drawing.Size(984, 17);
             this.StatusStrip_StatusLabel.Spring = true;
             this.StatusStrip_StatusLabel.Text = "Ready";
             this.StatusStrip_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -403,7 +403,7 @@
             this.Controls.Add(this.BottomPanel);
             this.Controls.Add(this.MenuStrip);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = Properties.Resources.Icon;
+            this.Icon = global::DtblViewerClient.Properties.Resources.Icon;
             this.MainMenuStrip = this.MenuStrip;
             this.MinimumSize = new System.Drawing.Size(1000, 500);
             this.Name = "MainForm";
